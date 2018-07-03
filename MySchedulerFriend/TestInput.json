@@ -1,0 +1,76 @@
+{
+  "WorkWeeks":
+  [
+    {
+      "StartDay": "2018-07-09",
+      "EndDay":"2018-07-13",
+      "StartTime": "08:00:00",
+      "EndTime": "20:00:00"
+    }
+  ],
+
+
+  "Workers":
+  [
+    {
+      "Name": "Amanda Applebee",
+      "Hours": 8,
+      "Availablity":
+      [
+          {"Day": "2018-07-09", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+          {"Day": "2018-07-10", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+          {"Day": "2018-07-11", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+          {"Day": "2018-07-12", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+          {"Day": "2018-07-13", "StartTime": "08:00:00", "EndTime": "20:00:00"}
+      ]
+    },
+    {
+      "Name": "Billy Barrymore",
+      "Hours": 8,
+      "Availablity":
+      [
+        {"Day": "2018-07-09", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-10", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-11", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-12", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-13", "StartTime": "08:00:00", "EndTime": "20:00:00"}
+      ]
+    },
+    {
+      "Name": "Caroline Christiansen",
+      "Hours": 8,
+      "Availablity":
+      [
+        {"Day": "2018-07-09", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-10", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-11", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-12", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-13", "StartTime": "08:00:00", "EndTime": "20:00:00"}
+      ]
+    },
+    {
+      "Name": "Daniel Douglass",
+      "Hours": 8,
+      "Availablity":
+      [
+        {"Day": "2018-07-09", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-10", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-11", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-12", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-13", "StartTime": "08:00:00", "EndTime": "20:00:00"}
+      ]
+    },
+    {
+      "Name": "Erica Ericson",
+      "Hours": 8,
+      "Availablity":
+      [
+        {"Day": "2018-07-09", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-10", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-11", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-12", "StartTime": "08:00:00", "EndTime": "20:00:00"},
+        {"Day": "2018-07-13", "StartTime": "08:00:00", "EndTime": "20:00:00"}
+      ]
+    }
+  ]
+}
