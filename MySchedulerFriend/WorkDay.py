@@ -7,7 +7,7 @@ class TimeSlot():
         self.StartTime = StartTime
         self.EndTime = StartTime + dt.timedelta(0,0,0,0,15)
 
-
+# must have > 7 timeslots
 class WorkDay():
     def __init__(self, Day, StartTime, EndTime):
         self.Day = Day
@@ -17,9 +17,13 @@ class WorkDay():
         self.Favorability = 0
 
     def BestManForTheJob(TimeSlot, MinShiftLength):
-
         startIndex = self.TimeSlots.index(TimeSlot)
         endIndex = len(self.TimeSlots)
+
+        # compensate if there is not enough time to meet MinShiftLength
+        if (endIndex - startIndex) < (MinShiftLength * 4 - 1):
+            startIndex = endIndex - MinShiftLength * 4 - 1
+            TimeSlot = self.TimeSlots[startIndex]
 
         TimeSlot.AvailableWorkers.sort(key=lambda worker: worker.RequiredHours, reverse = true)
 

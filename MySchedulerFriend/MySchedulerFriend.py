@@ -61,15 +61,21 @@ WorkDays.sort(key=lambda day: day.Favorability)
 
 # assign shifts
 for workDay in WorkDays:
-    # select available worker with most required work Hours
-    BestWorker = workDay.BestManForTheJob(workDay.TimeSlots[i], MinShiftLength)
 
-    if BestWorker != None:
-        endIndex = len(workDay.TimeSlots)
+    i = 0
+    endIndex = len(workDay.TimeSlots)
 
-        i = 0
-        while i < endIndex and BestWorker in workDay.TimeSlots[i].AvailableWorkers:
-            workDay.TimeSlots[i].AvailableWorkers.remove(BestWorker)
-            workDay.TimeSlots[i].SelectedWorkers.append(BestWorker)
-            BestWorker.RequiredHours -= 0.25
+    while i < endIndex:
+        
+        # select available worker with most required work Hours
+        BestWorker = workDay.BestManForTheJob(workDay.TimeSlots[i], MinShiftLength)
+
+        if BestWorker != None:
+
+            while i < endIndex and BestWorker in workDay.TimeSlots[i].AvailableWorkers:
+                workDay.TimeSlots[i].AvailableWorkers.remove(BestWorker)
+                workDay.TimeSlots[i].SelectedWorkers.append(BestWorker)
+                BestWorker.RequiredHours -= 0.25
+                i += 1
+        else
             i += 1
